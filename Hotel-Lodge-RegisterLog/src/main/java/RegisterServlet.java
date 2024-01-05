@@ -35,7 +35,8 @@ public class RegisterServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         if (success) {
-            out.print("Form data received and inserted into the database successfully!");
+            out.println("Form data received and inserted into the database successfully!");
+                    
         } else {
             out.print("Error processing form data.");
         }
